@@ -11,7 +11,7 @@ public class Main {
 
     public static void checkSumSign(int a, int b) {
         int sum = a + b;
-        if (sum < 0) {
+        if (sum >= 0) {
             System.out.println("Сумма положительная");
         } else {
             System.out.println("Сумма отрицательная");
@@ -24,8 +24,8 @@ public class Main {
             System.out.println("Красный");
         } else if (value > 0 && value < 100) {
             System.out.println("Жёлтый");
-        } else {
-            System.out.println("Красный");
+        } else if (value > 100) {
+            System.out.println("Зелёный");
         }
 
     }
